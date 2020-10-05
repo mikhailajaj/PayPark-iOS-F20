@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  PayPark
 //
-//  Created by Jigisha Patel on 2020-09-21.
+//  Created by Mikhail on 2020-09-25.
 //
 
 import UIKit
 import CoreData
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //Configeration Firebase
+        FirebaseApp.configure()
         return true
     }
 

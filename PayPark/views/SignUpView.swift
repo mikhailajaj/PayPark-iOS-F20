@@ -2,7 +2,7 @@
 //  SignUpView.swift
 //  PayPark
 //
-//  Created by Jigisha Patel on 2020-09-21.
+//  Created by Mikhail on 2020-09-25.
 //
 
 import SwiftUI

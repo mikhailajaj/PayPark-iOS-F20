@@ -2,7 +2,7 @@
 //  UserSettings.swift
 //  PayPark
 //
-//  Created by Jigisha Patel on 2020-09-25.
+//  Created by Mikhail on 2020-09-25.
 //
 
 import Foundation

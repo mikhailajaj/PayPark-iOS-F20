@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29F2670C252BCED0004193C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29F2670B252BCED0004193C5 /* GoogleService-Info.plist */; };
+		886D68047FA4B3FF13DDDA7C /* Pods_PayPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1963D26F41E1C0E54599312 /* Pods_PayPark.framework */; };
 		B4AEEAEB252289A7009A0309 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEEAEA252289A7009A0309 /* UserViewModel.swift */; };
 		B4C15CD7251942A6003F1263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CD6251942A6003F1263 /* AppDelegate.swift */; };
 		B4C15CD9251942A6003F1263 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CD8251942A6003F1263 /* SceneDelegate.swift */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060AA3E1B53B6373C563A5ED /* Pods-PayPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayPark.debug.xcconfig"; path = "Target Support Files/Pods-PayPark/Pods-PayPark.debug.xcconfig"; sourceTree = "<group>"; };
+		15615194226B8E3E00C56E6F /* Pods-PayPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayPark.release.xcconfig"; path = "Target Support Files/Pods-PayPark/Pods-PayPark.release.xcconfig"; sourceTree = "<group>"; };
+		29F2670B252BCED0004193C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B4AEEAEA252289A7009A0309 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		B4C15CD3251942A6003F1263 /* PayPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C15CD6251942A6003F1263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		B4C15CEF25194E03003F1263 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B4C15CF325195DEA003F1263 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B4C15D55251E30AA003F1263 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		C1963D26F41E1C0E54599312 /* Pods_PayPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886D68047FA4B3FF13DDDA7C /* Pods_PayPark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,8 @@
 			children = (
 				B4C15CD5251942A6003F1263 /* PayPark */,
 				B4C15CD4251942A6003F1263 /* Products */,
+				FE9B5DD661227AB29855BE92 /* Pods */,
+				E0E1E492DA371118A95048F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +100,7 @@
 		B4C15CD5251942A6003F1263 /* PayPark */ = {
 			isa = PBXGroup;
 			children = (
+				29F2670B252BCED0004193C5 /* GoogleService-Info.plist */,
 				B4AEEAE925228812009A0309 /* model */,
 				B4AEEAE8252287F7009A0309 /* view models */,
 				B4AEEAE7252287B1009A0309 /* views */,
@@ -122,6 +132,24 @@
 			path = util;
 			sourceTree = "<group>";
 		};
+		E0E1E492DA371118A95048F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1963D26F41E1C0E54599312 /* Pods_PayPark.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE9B5DD661227AB29855BE92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				060AA3E1B53B6373C563A5ED /* Pods-PayPark.debug.xcconfig */,
+				15615194226B8E3E00C56E6F /* Pods-PayPark.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4C15CEA251942A7003F1263 /* Build configuration list for PBXNativeTarget "PayPark" */;
 			buildPhases = (
+				F1B2C55A66AF044C1BFEF5FF /* [CP] Check Pods Manifest.lock */,
 				B4C15CCF251942A6003F1263 /* Sources */,
 				B4C15CD0251942A6003F1263 /* Frameworks */,
 				B4C15CD1251942A6003F1263 /* Resources */,
+				438A0DA4AB2C13689A62294E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,12 +210,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4C15CE6251942A7003F1263 /* LaunchScreen.storyboard in Resources */,
+				29F2670C252BCED0004193C5 /* GoogleService-Info.plist in Resources */,
 				B4C15CE3251942A7003F1263 /* Preview Assets.xcassets in Resources */,
 				B4C15CE0251942A7003F1263 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		438A0DA4AB2C13689A62294E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayPark/Pods-PayPark-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayPark/Pods-PayPark-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayPark/Pods-PayPark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B2C55A66AF044C1BFEF5FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayPark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4C15CCF251942A6003F1263 /* Sources */ = {
@@ -335,6 +408,7 @@
 		};
 		B4C15CEB251942A7003F1263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060AA3E1B53B6373C563A5ED /* Pods-PayPark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,7 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.profjk.PayPark;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mikhail.PayPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,6 +430,7 @@
 		};
 		B4C15CEC251942A7003F1263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15615194226B8E3E00C56E6F /* Pods-PayPark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,7 +443,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.profjk.PayPark;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mikhail.PayPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

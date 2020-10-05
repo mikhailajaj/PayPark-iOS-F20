@@ -2,7 +2,7 @@
 //  UserViewModel.swift
 //  PayPark
 //
-//  Created by Jigisha Patel on 2020-09-28.
+//  Created by Mikhail on 2020-09-25.
 //
 
 import Foundation
@@ -88,3 +88,7 @@ public class UserViewModel : ObservableObject {
         }
     }
 }
+// Database  created by fire base NoSqL database access by native SDKs
+/**
+ 
+ */
